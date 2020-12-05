@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-card-content>
+    <form autocomplete="off" novalidate [formGroup]="form">
+      <loci-input-text titulo="Nome" controlName="nome" [formGroup]="form"></loci-input-text>
+      <loci-input-textarea titulo="Descrição" controlName="descricao" [formGroup]="form"></loci-input-textarea>
+      <loci-input-number [minimo]="0" [maximo]="100" [step]="1" titulo="Idade" controlName="idade" [formGroup]="form"></loci-input-number>
+      <loci-input-date titulo="Data" controlName="data" [formGroup]="form"></loci-input-date>
+      <loci-input-select [opcoes]="generos" titulo="Gêneros" controlName="genero" [formGroup]="form"></loci-input-select>
+    </form>
+  </mat-card-content>
+</mat-card>
